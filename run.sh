@@ -15,7 +15,6 @@ function run() {
   docker run --rm --gpus all \
     --name sd-webui \
     -p 7860:7860 \
-    -p 5173:5173 \
     -v ./data:/data \
     -it sd-webui "$@"
 }
